@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "paths": {
+            "@client/*": ["./client/*"],
+            "@server/*": ["./server/src/*"]
+        }
+    }
+}

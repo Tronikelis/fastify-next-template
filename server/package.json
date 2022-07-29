@@ -1,0 +1,19 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && tsc-alias"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "tiny-glob": "^0.2.9"
+    },
+    "devDependencies": {
+        "dotenv": "^16.0.1",
+        "tsc-alias": "^1.7.0"
+    }
+}

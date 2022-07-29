@@ -1,0 +1,56 @@
+{
+    "name": "sql-ffmpeg-elastic",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "build:client": "cd client && npm run build",
+        "build:server": "cd server && npm run build",
+        "build:all": "npm run build:server && npm run build:client",
+        "build": "",
+        "dev": "nodemon --exec \"rm -rf server/dist && npm run build:server && npm run web\"",
+        "web": "cd server/dist && node -r dotenv/config index.js dotenv_config_path=../.env",
+        "prod": "cd server/dist && node index.js",
+        "lint": "eslint . -c ./.eslintrc.js"
+    },
+    "engines": {
+        "node": "<17 >=16",
+        "npm": ">=7"
+    },
+    "workspaces": [
+        "client",
+        "server"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "fastify": "^4.3.0",
+        "next": "^12.2.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "overrides": {
+        "fastify": "^4.3.0",
+        "next": "^12.2.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@next/eslint-plugin-next": "^12.2.3",
+        "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+        "@types/node": "^18.6.2",
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "@typescript-eslint/eslint-plugin": "^5.31.0",
+        "@typescript-eslint/parser": "^5.31.0",
+        "eslint": "8.20.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.30.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1",
+        "typescript": "^4.7.4"
+    }
+}
