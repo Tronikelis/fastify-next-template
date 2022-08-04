@@ -52,5 +52,11 @@
         "nodemon": "^2.0.19",
         "prettier": "^2.7.1",
         "typescript": "^4.7.4"
+    },
+    "nextBundleAnalysis": {
+        "budget": 204800,
+        "budgetPercentIncreaseRed": 20,
+        "showDetails": true,
+        "buildOutputDirectory": "./client/.next"
     }
 }
